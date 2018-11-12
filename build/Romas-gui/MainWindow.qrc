@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/MainWindow">
+        <file>Resources/camera_xminus.png</file>
+        <file>Resources/camera_xplus.png</file>
+        <file>Resources/camera_yminus.png</file>
+        <file>Resources/camera_yplus.png</file>
+        <file>Resources/camera_zminus.png</file>
+        <file>Resources/camera_zplus.png</file>
+        <file>Resources/camera_pan.png</file>
+        <file>Resources/camera_zoom.png</file>
+        <file>Resources/camera_rotate.png</file>
+        <file>Resources/config.png</file>
+        <file>Resources/bricks.png</file>
+        <file>Resources/compile.png</file>
+        <file>Resources/simulation.png</file>
+    </qresource>
+</RCC>

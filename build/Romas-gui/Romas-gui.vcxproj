@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_OPENGL_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\3rdparty\include\OpenSceneGraph\;$(SolutionDir)..\3rdparty\include\;$(SolutionDir)..\include\;.\GeneratedFiles;.;C:\Qt\Qt5.6.2\5.6\msvc2015\include;.\GeneratedFiles\$(ConfigurationName);C:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore;C:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui;C:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets;C:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\lib;..\..\3rdparty\lib;C:\Qt\Qt5.6.2\5.6\msvc2015\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>PocoFoundationd.lib;PocoNetd.lib;PocoUtild.lib;romas_debug.lib;screw_debug.lib;osgd.lib;OpenThreadsd.lib;osgUtild.lib;osgDBd.lib;osgGAd.lib;opengl32.lib;osgTextd.lib;osgViewerd.lib;C:\Qt\Qt5.6.2\5.6\msvc2015\lib\qtmaind.lib;C:\Qt\Qt5.6.2\5.6\msvc2015\lib\Qt5Cored.lib;C:\Qt\Qt5.6.2\5.6\msvc2015\lib\Qt5Guid.lib;C:\Qt\Qt5.6.2\5.6\msvc2015\lib\Qt5Widgetsd.lib;C:\Qt\Qt5.6.2\5.6\msvc2015\lib\Qt5OpenGLd.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;QT_OPENGL_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\3rdparty\include\OpenSceneGraph\;$(SolutionDir)..\3rdparty\include\;$(SolutionDir)..\include\;.\GeneratedFiles;.;C:\Qt\Qt5.6.2\5.6\msvc2015\include;.\GeneratedFiles\$(ConfigurationName);C:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore;C:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui;C:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets;C:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\lib;..\..\3rdparty\lib;C:\Qt\Qt5.6.2\5.6\msvc2015\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>PocoFoundation.lib;PocoNet.lib;PocoUtil.lib;romas.lib;screw.lib;osg.lib;OpenThreads.lib;osgUtil.lib;osgDB.lib;osgGA.lib;opengl32.lib;osgText.lib;osgViewer.lib;C:\Qt\Qt5.6.2\5.6\msvc2015\lib\qtmain.lib;C:\Qt\Qt5.6.2\5.6\msvc2015\lib\Qt5Core.lib;C:\Qt\Qt5.6.2\5.6\msvc2015\lib\Qt5Gui.lib;C:\Qt\Qt5.6.2\5.6\msvc2015\lib\Qt5Widgets.lib;C:\Qt\Qt5.6.2\5.6\msvc2015\lib\Qt5OpenGL.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CentralWidget.cpp" />
+    <ClCompile Include="ConfigDialog.cpp" />
+    <ClCompile Include="ConfigPages.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_AssembleMenuWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_AssembleSpaceWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CentralWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ConfigDialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ConfigPages.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_MainMenuWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MainWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_RobotNameDialog.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_StateMachine.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SubMenuWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AssembleMenuWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AssembleSpaceWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CentralWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ConfigDialog.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_ConfigPages.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_MainMenuWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MainWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_MainWindow.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_RobotNameDialog.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_StateMachine.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SubMenuWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainMenuWidget.cpp" />
+    <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="AssembleSpaceWidget.cpp" />
+    <ClCompile Include="PickHandler.cpp" />
+    <ClCompile Include="AssembleMenuWidget.cpp" />
+    <ClCompile Include="RobotNameDialog.cpp" />
+    <ClCompile Include="StateMachine.cpp" />
+    <ClCompile Include="SubMenuWidget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="StateMachine.hpp">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing StateMachine.hpp...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB "-I$(SolutionDir)..\3rdparty\include\OpenSceneGraph" "-I$(SolutionDir)..\3rdparty\include" "-I$(SolutionDir)..\include" "-I.\GeneratedFiles" "-I." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing StateMachine.hpp...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB "-I$(SolutionDir)..\3rdparty\include\OpenSceneGraph" "-I$(SolutionDir)..\3rdparty\include" "-I$(SolutionDir)..\include" "-I.\GeneratedFiles" "-I." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL"</Command>
+    </CustomBuild>
+    <CustomBuild Include="CentralWidget.hpp">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CentralWidget.hpp...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB "-I$(SolutionDir)..\3rdparty\include\OpenSceneGraph" "-I$(SolutionDir)..\3rdparty\include" "-I$(SolutionDir)..\include" "-I.\GeneratedFiles" "-I." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CentralWidget.hpp...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB "-I$(SolutionDir)..\3rdparty\include\OpenSceneGraph" "-I$(SolutionDir)..\3rdparty\include" "-I$(SolutionDir)..\include" "-I.\GeneratedFiles" "-I." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL"</Command>
+    </CustomBuild>
+    <CustomBuild Include="PickHandler.hpp">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Performing Custom Build Tools</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="AssembleSpaceWidget.hpp">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing AssembleSpaceWidget.hpp...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB "-I$(SolutionDir)..\3rdparty\include\OpenSceneGraph" "-I$(SolutionDir)..\3rdparty\include" "-I$(SolutionDir)..\include" "-I.\GeneratedFiles" "-I." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing AssembleSpaceWidget.hpp...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB "-I$(SolutionDir)..\3rdparty\include\OpenSceneGraph" "-I$(SolutionDir)..\3rdparty\include" "-I$(SolutionDir)..\include" "-I.\GeneratedFiles" "-I." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL"</Command>
+    </CustomBuild>
+    <CustomBuild Include="SubMenuWidget.hpp">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing SubMenuWidget.hpp...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB  "-I$(SolutionDir)..\3rdparty\include\OpenSceneGraph" "-I$(SolutionDir)..\3rdparty\include" "-I$(SolutionDir)..\include" "-I.\GeneratedFiles" "-I." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing SubMenuWidget.hpp...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB  "-I$(SolutionDir)..\3rdparty\include\OpenSceneGraph" "-I$(SolutionDir)..\3rdparty\include" "-I$(SolutionDir)..\include" "-I.\GeneratedFiles" "-I." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL"</Command>
+    </CustomBuild>
+    <CustomBuild Include="AssembleMenuWidget.hpp">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing AssembleMenuWidget.hpp...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB "-I$(SolutionDir)..\3rdparty\include\OpenSceneGraph" "-I$(SolutionDir)..\3rdparty\include" "-I$(SolutionDir)..\include" "-I.\GeneratedFiles" "-I." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing AssembleMenuWidget.hpp...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB "-I$(SolutionDir)..\3rdparty\include\OpenSceneGraph" "-I$(SolutionDir)..\3rdparty\include" "-I$(SolutionDir)..\include" "-I.\GeneratedFiles" "-I." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL"</Command>
+    </CustomBuild>
+    <CustomBuild Include="MainMenuWidget.hpp">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing MainMenuWidget.hpp...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB  "-I$(SolutionDir)..\3rdparty\include\OpenSceneGraph" "-I$(SolutionDir)..\3rdparty\include" "-I$(SolutionDir)..\include" "-I.\GeneratedFiles" "-I." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing MainMenuWidget.hpp...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB  "-I$(SolutionDir)..\3rdparty\include\OpenSceneGraph" "-I$(SolutionDir)..\3rdparty\include" "-I$(SolutionDir)..\include" "-I.\GeneratedFiles" "-I." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL"</Command>
+    </CustomBuild>
+    <CustomBuild Include="MainWindow.hpp">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing MainWindow.hpp...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB  "-I$(SolutionDir)..\3rdparty\include\OpenSceneGraph" "-I$(SolutionDir)..\3rdparty\include" "-I$(SolutionDir)..\include" "-I.\GeneratedFiles" "-I." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing MainWindow.hpp...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB  "-I$(SolutionDir)..\3rdparty\include\OpenSceneGraph" "-I$(SolutionDir)..\3rdparty\include" "-I$(SolutionDir)..\include" "-I.\GeneratedFiles" "-I." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="MainWindow.qrc">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Romas-gui.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ConfigDialog.hpp">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB "-I$(SolutionDir)..\3rdparty\include\OpenSceneGraph" "-I$(SolutionDir)..\3rdparty\include" "-I$(SolutionDir)..\include" "-I.\GeneratedFiles" "-I." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ConfigDialog.hpp...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ConfigDialog.hpp...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB "-I$(SolutionDir)..\3rdparty\include\OpenSceneGraph" "-I$(SolutionDir)..\3rdparty\include" "-I$(SolutionDir)..\include" "-I.\GeneratedFiles" "-I." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="ConfigPages.hpp">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB "-I$(SolutionDir)..\3rdparty\include\OpenSceneGraph" "-I$(SolutionDir)..\3rdparty\include" "-I$(SolutionDir)..\include" "-I.\GeneratedFiles" "-I." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ConfigPages.hpp...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB "-I$(SolutionDir)..\3rdparty\include\OpenSceneGraph" "-I$(SolutionDir)..\3rdparty\include" "-I$(SolutionDir)..\include" "-I.\GeneratedFiles" "-I." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ConfigPages.hpp...</Message>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath);C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="RobotNameDialog.hpp">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB  "-I$(SolutionDir)..\3rdparty\include\OpenSceneGraph" "-I$(SolutionDir)..\3rdparty\include" "-I$(SolutionDir)..\include" "-I.\GeneratedFiles" "-I." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DQT_OPENGL_LIB  "-I$(SolutionDir)..\3rdparty\include\OpenSceneGraph" "-I$(SolutionDir)..\3rdparty\include" "-I$(SolutionDir)..\include" "-I.\GeneratedFiles" "-I." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtCore" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtGui" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtWidgets" "-IC:\Qt\Qt5.6.2\5.6\msvc2015\include\QtOpenGL"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing RobotNameDialog.hpp...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing RobotNameDialog.hpp...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt5.6.2\5.6\msvc2015\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" MocOptions="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,8 @@
+<Romas>
+    <Assembly>
+        <Part id="0" parentId="-1" blockId="000" parentJointCandidateIndex="-1" childJointCandidateIndex="-1" parentAxis1="x" childAxis1="x" parentAxis2="y" childAxis2="y" jointType="fixed"/>
+        <Part id="1" parentId="0" blockId="002" parentJointCandidateIndex="0" childJointCandidateIndex="0" parentAxis1="z" childAxis1="z" parentAxis2="x" childAxis2="y" jointType="revolute" rotationAxisZ="z" rotationAxisX="x" offset="0"/>
+        <Part id="2" parentId="1" blockId="003" parentJointCandidateIndex="1" childJointCandidateIndex="0" parentAxis1="-x" childAxis1="z" parentAxis2="y" childAxis2="y" jointType="prismatic" rotationAxisZ="-x" rotationAxisX="y" offset="0"/>
+        <Part id="3" parentId="2" blockId="001" parentJointCandidateIndex="2" childJointCandidateIndex="0" parentAxis1="x" childAxis1="z" parentAxis2="y" childAxis2="x" jointType="revolute" rotationAxisZ="x" rotationAxisX="z" offset="0"/>
+    </Assembly>
+</Romas>

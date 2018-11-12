@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.config.gnu.cross.so.debug.1805515726">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.cross.so.debug.1805515726" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/LibAppManager"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/AppManagerLib"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/ROBOTModel"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/Arm3ControlLib"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/LibAppManager/Debug"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/AppManagerLib/Debug"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/ROBOTModel/Debug"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/Arm3ControlLib/Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="LibAppManager"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="AppManagerLib"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="Arm3ControlLib"/>
+					</externalSetting>
+				</externalSettings>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.Cygwin_PE" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="so" artifactName="Arm3ControlLib" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.sharedLib" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.sharedLib,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.cross.so.debug.1805515726" name="Debug" parent="cdt.managedbuild.config.gnu.cross.so.debug">
+					<folderInfo id="cdt.managedbuild.config.gnu.cross.so.debug.1805515726." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.cygwin.base.1673447999" name="Cygwin GCC" nonInternalBuilderId="cdt.managedbuild.target.gnu.builder.cygwin.base" superClass="cdt.managedbuild.toolchain.gnu.cygwin.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.Cygwin_PE" id="cdt.managedbuild.target.gnu.platform.cygwin.base.342207687" name="Debug Platform" osList="win32" superClass="cdt.managedbuild.target.gnu.platform.cygwin.base"/>
+							<builder buildPath="${workspace_loc:/SCRP1Model/Debug}" id="cdt.managedbuild.target.gnu.builder.cygwin.base.50357125" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.cygwin.base"/>
+							<tool command="i686-unknown-linux-gnu-as" id="cdt.managedbuild.tool.gnu.assembler.cygwin.base.103467461" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.cygwin.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.742772253" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.cygwin.base.2092859414" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.cygwin.base"/>
+							<tool command="i686-unknown-linux-gnu-g++" id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.515156324" name="Cygwin C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base">
+								<option id="gnu.cpp.compiler.option.optimization.level.1312581013" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1981993435" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.include.paths.1839806547" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${NRMK_XENO_PATH}\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_ECAT_PATH}\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_CORE_INC_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_HELPER_INC_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_EIGEN_INC_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_POCO_INC_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_HELPER_INC_PATH}\hw&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_HELPER_INC_PATH}\hw\nrmk_ecat&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1168785412" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__XENO__"/>
+									<listOptionValue builtIn="false" value="_CONTROLLER"/>
+									<listOptionValue builtIn="false" value="_BUILD_SHARED_LIB_"/>
+									<listOptionValue builtIn="false" value="KIN_CONTROL"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.853783729" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin"/>
+							</tool>
+							<tool command="i686-unknown-linux-gnu-gcc" id="cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.1335277462" name="Cygwin C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cygwin.base">
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.2014729733" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.200994042" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.1446274" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${NRMK_XENO_PATH}\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_ECAT_PATH}\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_CORE_INC_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_HELPER_INC_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_EIGEN_INC_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_POCO_INC_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_HELPER_INC_PATH}\hw&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_HELPER_INC_PATH}\hw\nrmk_ecat&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.826643132" superClass="cdt.managedbuild.tool.gnu.c.compiler.input.cygwin"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.cygwin.base.1223794503" name="Cygwin C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.cygwin.base">
+								<option defaultValue="true" id="gnu.c.link.option.shared.67173683" name="Shared (-shared)" superClass="gnu.c.link.option.shared" valueType="boolean"/>
+							</tool>
+							<tool command="i686-unknown-linux-gnu-g++" id="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.base.1547143538" name="Cygwin C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.base">
+								<option defaultValue="true" id="gnu.cpp.link.option.shared.1238349918" name="Shared (-shared)" superClass="gnu.cpp.link.option.shared" valueType="boolean"/>
+								<option id="gnu.cpp.link.option.paths.1672352929" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${NRMK_XENO_PATH}\lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_ECAT_PATH}\lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_LIB_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_POCO_LIB_PATH}\i686&quot;"/>
+								</option>
+								<option id="gnu.cpp.link.option.libs.2103808165" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="NRMKHelperi686"/>
+									<listOptionValue builtIn="false" value="PocoNet"/>
+									<listOptionValue builtIn="false" value="PocoFoundation"/>
+									<listOptionValue builtIn="false" value="pthread"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1476736028" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+								<outputType id="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.output.so.1165385366" outputPrefix="" superClass="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.output.so"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.gnu.cross.so.release.1158982460">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.cross.so.release.1158982460" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/LibAppManager"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/ROBOTModel"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/Arm3ControlLib"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/LibAppManager/Release"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/ROBOTModel/Release"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/Arm3ControlLib/Release"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="LibAppManager"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="Arm3ControlLib"/>
+					</externalSetting>
+				</externalSettings>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.Cygwin_PE" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="so" artifactName="Arm3ControlLib" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.sharedLib" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.sharedLib,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.cross.so.release.1158982460" name="Release" parent="cdt.managedbuild.config.gnu.cross.so.release">
+					<folderInfo id="cdt.managedbuild.config.gnu.cross.so.release.1158982460." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.cygwin.base.1741686406" name="Cygwin GCC" nonInternalBuilderId="cdt.managedbuild.target.gnu.builder.cygwin.base" superClass="cdt.managedbuild.toolchain.gnu.cygwin.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.Cygwin_PE" id="cdt.managedbuild.target.gnu.platform.cygwin.base.766742949" name="Debug Platform" osList="win32" superClass="cdt.managedbuild.target.gnu.platform.cygwin.base"/>
+							<builder autoBuildTarget="all" buildPath="${workspace_loc:/Arm3ControlLib/lib}" cleanBuildTarget="clean" enableAutoBuild="false" enableCleanBuild="true" enabledIncrementalBuild="true" id="cdt.managedbuild.target.gnu.builder.cygwin.base.604462987" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelizationNumber="1" superClass="cdt.managedbuild.target.gnu.builder.cygwin.base"/>
+							<tool command="i686-unknown-linux-gnu-as" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="cdt.managedbuild.tool.gnu.assembler.cygwin.base.392786831" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.cygwin.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1112248647" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.cygwin.base.132844629" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.cygwin.base"/>
+							<tool command="i686-unknown-linux-gnu-g++" id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.433107391" name="Cygwin C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base">
+								<option id="gnu.cpp.compiler.option.optimization.level.106703912" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.889234591" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.include.paths.1233033227" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${NRMK_XENO_PATH}\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_ECAT_PATH}\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_CORE_INC_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_HELPER_INC_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_EIGEN_INC_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_POCO_INC_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_HELPER_INC_PATH}\hw&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_HELPER_INC_PATH}\hw\nrmk_ecat&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1090142682" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="__XENO__"/>
+									<listOptionValue builtIn="false" value="_CONTROLLER"/>
+									<listOptionValue builtIn="false" value="_BUILD_SHARED_LIB_"/>
+									<listOptionValue builtIn="false" value="KIN_CONTROL"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.273806188" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin"/>
+							</tool>
+							<tool command="i686-unknown-linux-gnu-gcc" id="cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.630804867" name="Cygwin C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cygwin.base">
+								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.option.optimization.level.1776095246" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.352295152" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.111146711" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${NRMK_XENO_PATH}\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_ECAT_PATH}\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_CORE_INC_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_HELPER_INC_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_EIGEN_INC_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_POCO_INC_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_HELPER_INC_PATH}\hw&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_HELPER_INC_PATH}\hw\nrmk_ecat&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1058565648" superClass="cdt.managedbuild.tool.gnu.c.compiler.input.cygwin"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.cygwin.base.964657176" name="Cygwin C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.cygwin.base">
+								<option defaultValue="true" id="gnu.c.link.option.shared.2116208736" name="Shared (-shared)" superClass="gnu.c.link.option.shared" valueType="boolean"/>
+							</tool>
+							<tool command="i686-unknown-linux-gnu-g++" id="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.base.304978536" name="Cygwin C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.base">
+								<option defaultValue="true" id="gnu.cpp.link.option.shared.618696056" name="Shared (-shared)" superClass="gnu.cpp.link.option.shared" valueType="boolean"/>
+								<option id="gnu.cpp.link.option.libs.1235450056" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="NRMKHelperi686"/>
+									<listOptionValue builtIn="false" value="PocoNet"/>
+									<listOptionValue builtIn="false" value="PocoFoundation"/>
+									<listOptionValue builtIn="false" value="pthread"/>
+								</option>
+								<option id="gnu.cpp.link.option.paths.570616156" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${NRMK_XENO_PATH}\lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_ECAT_PATH}\lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_LIB_PATH}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${NRMK_POCO_LIB_PATH}\i686&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.333636160" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+								<outputType id="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.output.so.1207002822" outputPrefix="" superClass="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.output.so"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="LibAppManager.cdt.managedbuild.target.gnu.cross.so.1117997426" name="Shared Library" projectType="cdt.managedbuild.target.gnu.cross.so"/>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="1">
+		<resource resourceType="PROJECT" workspacePath="/LibAppManager"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.so.debug.1805515726;cdt.managedbuild.config.gnu.cross.so.debug.1805515726.;cdt.managedbuild.tool.gnu.cross.c.compiler.278631221;cdt.managedbuild.tool.gnu.c.compiler.input.1083756564">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.so.release.1158982460;cdt.managedbuild.config.gnu.cross.so.release.1158982460.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.433107391;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.273806188">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.so.release.1158982460;cdt.managedbuild.config.gnu.cross.so.release.1158982460.;cdt.managedbuild.tool.gnu.cross.c.compiler.434979229;cdt.managedbuild.tool.gnu.c.compiler.input.1541398804">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.so.debug.1805515726;cdt.managedbuild.config.gnu.cross.so.debug.1805515726.;cdt.managedbuild.tool.gnu.cross.cpp.compiler.868790975;cdt.managedbuild.tool.gnu.cpp.compiler.input.565019902">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.so.debug.1805515726;cdt.managedbuild.config.gnu.cross.so.debug.1805515726.;cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.base.515156324;cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.853783729">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.so.debug.1805515726;cdt.managedbuild.config.gnu.cross.so.debug.1805515726.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.1335277462;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.826643132">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.so.release.1158982460;cdt.managedbuild.config.gnu.cross.so.release.1158982460.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.base.630804867;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.1058565648">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cross.so.release.1158982460;cdt.managedbuild.config.gnu.cross.so.release.1158982460.;cdt.managedbuild.tool.gnu.cross.cpp.compiler.1474920570;cdt.managedbuild.tool.gnu.cpp.compiler.input.2076957482">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+</cproject>

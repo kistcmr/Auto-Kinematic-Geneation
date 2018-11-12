@@ -1,0 +1,157 @@
+<data>
+    <block id='modman_000' name='Base' isBaseBlock='true' isToolBlock='false' tag='default'><!-- 베이스 -->
+		<path value='modman\body000.obj'/>
+		<diffuse value='modman\diffuse.png'/>
+		<normal value='modman\normal.png'/>
+		<thumbnail value='modman\default_thumb_pic000.png'/>
+		<pointList>
+			<point x='0' y='0' z='0.1' jointAssembly='joint' useAxis='z'/>
+		</pointList>
+		<mass value='6.95'/>
+		<com x='0' y='0' z='0.04'/>
+		<inertia lxx='0.02' lyy='0.02' lzz='0.03' lxy='0' lyz='0' lxz='0'/>	
+	</block>
+	<block id='modman_001' name='jm1-c' isBaseBlock='false' isToolBlock='false' tag='default'>
+		<path value='modman\jm1-c.obj'/>
+		<diffuse value='modman\diffuse_modman.png'/>
+		<normal value='modman\normal_modman.png'/>
+		<thumbnail value='modman\jm1-c.png'/>
+		<pointList>
+			<point x='0' y='0' z='0' jointAssembly='assembly' useAxis='z'/>
+			<point x='0' y='0' z='0.16' jointAssembly='joint' useAxis='z'/>
+		</pointList>
+		<mass value='3.3929'/>
+		<com x='0' y='0' z='0.08'/>
+		<inertia lxx='0.0094' lyy='0.0094' lzz='0.0042' lxy='0' lyz='0' lxz='0'/>	
+	</block>
+	<block id='modman_002' name='jm1-p' isBaseBlock='false' isToolBlock='false' tag='default'>
+		<path value='modman\jm1-p.obj'/>
+		<diffuse value='modman\diffuse_modman.png'/>
+		<normal value='modman\normal_modman.png'/>
+		<thumbnail value='modman\jm1-p.png'/>
+		<pointList>
+			<point x='0' y='0' z='0' jointAssembly='assembly' useAxis='z'/>
+			<point x='0.08' y='0' z='0.08' jointAssembly='joint' useAxis='x'/>
+		</pointList>
+		<mass value='3.5532'/>
+		<com x='0.0135' y='0' z='0.0684'/>
+		<inertia lxx='0.0068' lyy='0.0086' lzz='0.0064' lxy='0' lyz='0' lxz='0.0006'/>	
+	</block>
+	<block id='modman_003' name='jm2-s' isBaseBlock='false' isToolBlock='false' tag='default'>
+		<path value='modman\jm2-s.obj'/>
+		<diffuse value='modman\diffuse_modman.png'/>
+		<normal value='modman\normal_modman.png'/>
+		<thumbnail value='modman\jm2-s.png'/>
+		<pointList>
+			<point x='0' y='0' z='0' jointAssembly='joint' useAxis='z'/>
+			<point x='0.04' y='0.085' z='0.085' jointAssembly='joint' useAxis='y'/>
+		</pointList>
+		<mass value='5.5302'/>
+		<com x='0.0208' y='0.0031' z='0.0792'/>
+		<inertia lxx='0.0162' lyy='0.0141' lzz='0.0151' lxy='0.0003' lyz='0.0001' lxz='0.0007'/>	
+	</block>
+	<block id='modman_004' name='jm2-m' isBaseBlock='false' isToolBlock='false' tag='default'>
+		<path value='modman\jm2-m.obj'/>
+		<diffuse value='modman\diffuse_modman.png'/>
+		<normal value='modman\normal_modman.png'/>
+		<thumbnail value='modman\jm2-m.png'/>
+		<pointList>
+			<point x='0' y='0' z='0' jointAssembly='joint' useAxis='z'/>
+			<point x='0.04' y='0.09' z='0.09' jointAssembly='joint' useAxis='y'/>
+		</pointList>
+		<mass value='5.9543'/>
+		<com x='0.0207' y='0.0030' z='0.0843'/>
+		<inertia lxx='0.0192' lyy='0.0159' lzz='0.0171' lxy='0.0003' lyz='0.0001' lxz='0.0007'/>	
+	</block>
+	<block id='modman_005' name='jm2-l' isBaseBlock='false' isToolBlock='false' tag='default'>
+		<path value='modman\jm2-l.obj'/>
+		<diffuse value='modman\diffuse_modman.png'/>
+		<normal value='modman\normal_modman.png'/>
+		<thumbnail value='modman\jm2-l.png'/>
+		<pointList>
+			<point x='0' y='0' z='0' jointAssembly='joint' useAxis='z'/>
+			<point x='0.04' y='0.095' z='0.095' jointAssembly='joint' useAxis='y'/>
+		</pointList>
+		<mass value='6.3784'/>
+		<com x='0.0207' y='0.0030' z='0.0893'/>
+		<inertia lxx='0.0225' lyy='0.0179' lzz='0.0193' lxy='0.0004' lyz='0.0001' lxz='0.0007'/>	
+	</block>
+	<block id='modman_006' name='lm1-200' isBaseBlock='false' isToolBlock='false' tag='default'>
+		<path value='modman\lm1-200.obj'/>
+		<diffuse value='modman\diffuse_modman.png'/>
+		<normal value='modman\normal_modman.png'/>
+		<thumbnail value='modman\lm1-200.png'/>
+		<pointList>
+			<point x='0' y='0' z='0' jointAssembly='assembly' useAxis='y,-y'/>
+			<point x='0' y='0' z='0.2' jointAssembly='assembly' useAxis='y,-y'/>
+		</pointList>
+		<mass value='1.501'/>
+		<com x='0' y='0.0226' z='0.1'/>
+		<inertia lxx='0.009' lyy='0.0093' lzz='0.0007' lxy='0' lyz='0' lxz='0'/>	
+	</block>
+	<block id='modman_007' name='lm1-300' isBaseBlock='false' isToolBlock='false' tag='default'>
+		<path value='modman\lm1-300.obj'/>
+		<diffuse value='modman\diffuse_modman.png'/>
+		<normal value='modman\normal_modman.png'/>
+		<thumbnail value='modman\lm1-300.png'/>
+		<pointList>
+			<point x='0' y='0' z='0' jointAssembly='assembly' useAxis='y,-y'/>
+			<point x='0' y='0' z='0.3' jointAssembly='assembly' useAxis='y,-y'/>
+		</pointList>
+		<mass value='2.0275'/>
+		<com x='0' y='0.0232' z='0.15'/>
+		<inertia lxx='0.0234' lyy='0.0238' lzz='0.0009' lxy='0' lyz='0' lxz='0'/>	
+	</block>
+	<block id='modman_008' name='lm1-400' isBaseBlock='false' isToolBlock='false' tag='default'>
+		<path value='modman\lm1-400.obj'/>
+		<diffuse value='modman\diffuse_modman.png'/>
+		<normal value='modman\normal_modman.png'/>
+		<thumbnail value='modman\lm1-400.png'/>
+		<pointList>
+			<point x='0' y='0' z='0' jointAssembly='assembly' useAxis='y,-y'/>
+			<point x='0' y='0' z='0.4' jointAssembly='assembly' useAxis='y,-y'/>
+		</pointList>
+		<mass value='2.554'/>
+		<com x='0' y='0.0236' z='0.2'/>
+		<inertia lxx='0.0478' lyy='0.0485' lzz='0.0011' lxy='0' lyz='0' lxz='0'/>	
+	</block>
+	<block id='modman_009' name='lm2-120' isBaseBlock='false' isToolBlock='false' tag='default'>
+		<path value='modman\lm2-120.obj'/>
+		<diffuse value='modman\diffuse_modman.png'/>
+		<normal value='modman\normal_modman.png'/>
+		<thumbnail value='modman\lm2-120.png'/>
+		<pointList>
+			<point x='0' y='0' z='0' jointAssembly='assembly' useAxis='y,-y'/>
+			<point x='0' y='-0.08' z='0.2' jointAssembly='assembly' useAxis='z,-z'/>
+		</pointList>
+		<mass value='1.9222'/>
+		<com x='0' y='-0.0289' z='0.1129'/>
+		<inertia lxx='0.0131' lyy='0.0103' lzz='0.0041' lxy='0' lyz='-0.0033' lxz='0'/>	
+	</block>
+	<block id='modman_010' name='lm2-220' isBaseBlock='false' isToolBlock='false' tag='default'>
+		<path value='modman\lm2-220.obj'/>
+		<diffuse value='modman\diffuse_modman.png'/>
+		<normal value='modman\normal_modman.png'/>
+		<thumbnail value='modman\lm2-220.png'/>
+		<pointList>
+			<point x='0' y='0' z='0' jointAssembly='assembly'useAxis='y,-y'/>
+			<point x='0' y='-0.08' z='0.3' jointAssembly='assembly' useAxis='z,-z'/>
+		</pointList>
+		<mass value='1.9222'/>
+		<com x='0' y='-0.0039' z='0.1129'/>
+		<inertia lxx='0.0131' lyy='0.0103' lzz='0.0041' lxy='0' lyz='-0.0033' lxz='0'/>	
+	</block>
+	<block id='modman_011' name='lm2-320' isBaseBlock='false' isToolBlock='false' tag='default'>
+		<path value='modman\lm2-320.obj'/>
+		<diffuse value='modman\diffuse_modman.png'/>
+		<normal value='modman\normal_modman.png'/>
+		<thumbnail value='modman\lm2-320.png'/>
+		<pointList>
+			<point x='0' y='0' z='0' jointAssembly='assembly'useAxis='y,-y'/>
+			<point x='0' y='-0.08' z='0.4' jointAssembly='assembly' useAxis='z,-z'/>
+		</pointList>
+		<mass value='2.9752'/>
+		<com x='0' y='0.0063' z='0.2225'/>
+		<inertia lxx='0.0605' lyy='0.0574' lzz='0.0051' lxy='0' lyz='-0.008' lxz='0'/>	
+	</block>
+</data>

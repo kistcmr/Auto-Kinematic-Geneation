@@ -1,0 +1,9 @@
+<data>
+  <part id="0" parentId="-1" blockId="000" parentJointCandidateIndex="-1" jointCandidateIndex="-1" parentAxis1="" childAxis1="" parentAxis2="" childAxis2="" rotationAxisZ="" rotationAxisX="" jointType="revolute" offset="" isFixed="true"/>
+  <part id="1" parentId="0" blockId="001" parentJointCandidateIndex="0" jointCandidateIndex="0" parentAxis1="x" childAxis1="x" parentAxis2="y" childAxis2="y" rotationAxisZ="x" rotationAxisX="-z" jointType="revolute" offset="30" isFixed="false"/>
+  <part id="2" parentId="1" blockId="002" parentJointCandidateIndex="1" jointCandidateIndex="0" parentAxis1="x" childAxis1="x" parentAxis2="x" childAxis2="x" rotationAxisZ="x" rotationAxisX="-z" jointType="revolute" offset="0" />
+  <part id="3" parentId="2" blockId="001" parentJointCandidateIndex="1" jointCandidateIndex="0" parentAxis1="x" childAxis1="x" parentAxis2="x" childAxis2="x" rotationAxisZ="x" rotationAxisX="-z" jointType="revolute" offset="0" isFixed="false"/>
+  <part id="4" parentId="3" blockId="001" parentJointCandidateIndex="1" jointCandidateIndex="0" parentAxis1="x" childAxis1="x" parentAxis2="x" childAxis2="x" rotationAxisZ="x" rotationAxisX="-z" jointType="revolute" offset="0" isFixed="false"/>
+  <part id="5" parentId="4" blockId="002" parentJointCandidateIndex="1" jointCandidateIndex="0" parentAxis1="x" childAxis1="x" parentAxis2="x" childAxis2="x" rotationAxisZ="x" rotationAxisX="-z" jointType="revolute" offset="0" isFixed="false"/>
+  <part id="6" parentId="5" blockId="004" parentJointCandidateIndex="1" jointCandidateIndex="0" parentAxis1="x" childAxis1="x" parentAxis2="x" childAxis2="x" rotationAxisZ="x" rotationAxisX="-z" jointType="revolute" offset="0" isFixed="false"/>
+</data>

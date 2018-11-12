@@ -1,0 +1,4 @@
+<makeFile>
+  <block path="myarm_assembly.b.xml"/>
+  <assembly path="myarm_assembly.xml"/>
+</makeFile>

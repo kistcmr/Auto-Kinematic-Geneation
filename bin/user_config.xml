@@ -1,0 +1,8 @@
+<data>
+    <vsVer 			value='v100'/><!-- vs2012(v110) vs2010(v100)-->
+	<resourcePath 	value='C:\Program Files (x86)\neuromeka\NRMKToolkit\MRToolkit2016\data'/><!-- block's resource path-->
+	<vcvarsall 		value='C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\vcvarsall'/> 
+	<msbuild 		value='C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild'/>
+	<neuromeka		value='C:\Program Files (x86)\neuromeka'/>
+	<crossBridge    value='D:\crossbridge'/>
+</data>

@@ -1,0 +1,66 @@
+<data>
+  <block id="000" name="Base" isBaseBlock="true" isToolBlock="false" tag="default">
+    <path value="default\body000.obj"/>
+    <diffuse value="default\diffuse.png"/>
+    <normal value="default\normal.png"/>
+    <thumbnail value="default\default_thumb_pic000.png"/>
+    <pointList>
+      <point x="0" y="0" z="0.1" jointAssembly="joint" useAxis="x,y,z,-x,-y,-z"/>
+    </pointList>
+    <mass value="6.95"/>
+    <com x="0" y="0" z="0.04"/>
+    <inertia lxx="0.02" lyy="0.02" lzz="0.03" lxy="0" lyz="0" lxz="0"/>
+  </block>
+  <block id="001" name="Cylinder" isBaseBlock="false" isToolBlock="false" tag="default">
+    <path value="default\body001.obj"/>
+    <diffuse value="default\diffuse.png"/>
+    <normal value="default\normal.png"/>
+    <thumbnail value="default\default_thumb_pic001.png"/>
+    <pointList>
+      <point x="0" y="0" z="0" jointAssembly="assembly" useAxis="x,y,z,-x,-y,-z"/>
+      <point x="0" y="0" z="0.5" jointAssembly="joint" useAxis="x,y,z,-x,-y,-z"/>
+    </pointList>
+    <mass value="21.99"/>
+    <com x="0" y="0" z="0.25"/>
+    <inertia lxx="0.49" lyy="0.49" lzz="0.06" lxy="0" lyz="0" lxz="0"/>
+  </block>
+  <block id="002" name="Angled" isBaseBlock="false" isToolBlock="false" tag="other">
+    <path value="default\body002.obj"/>
+    <diffuse value="default\diffuse.png"/>
+    <normal value="default\normal.png"/>
+    <thumbnail value="default\default_thumb_pic002.png"/>
+    <pointList>
+      <point x="0" y="0" z="0" jointAssembly="assembly" useAxis="x,y,z,-x,-y,-z"/>
+      <point x="-0.25" y="0" z="0.3" jointAssembly="joint" useAxis="x,y,z,-x,-y,-z"/>
+    </pointList>
+    <mass value="24.663"/>
+    <com x="-0.051" y="0" z="0.223"/>
+    <inertia lxx="0.298" lyy="0.449" lzz="0.216" lxy="0" lyz="0" lxz="-0.097"/>
+  </block>
+  <block id="003" name="T-shaped" isBaseBlock="false" isToolBlock="false" tag="other">
+    <path value="default\body003.obj"/>
+    <diffuse value="default\diffuse.png"/>
+    <normal value="default\normal.png"/>
+    <thumbnail value="default\default_thumb_pic003.png"/>
+    <pointList>
+      <point x="0" y="0" z="0" jointAssembly="assembly" useAxis="x,y,z,-x,-y,-z"/>
+      <point x="-0.25" y="0" z="0.3" jointAssembly="joint" useAxis="x,y,z,-x,-y,-z"/>
+      <point x="0.25" y="0" z="0.3" jointAssembly="joint" useAxis="x,y,z,-x,-y,-z"/>
+    </pointList>
+    <mass value="32.49"/>
+    <com x="0" y="0" z="0.24"/>
+    <inertia lxx="0.35" lyy="0.78" lzz="0.51" lxy="0" lyz="0" lxz="0"/>
+  </block>
+  <block id="004" name="Tool" isBaseBlock="false" isToolBlock="true" tag="other">
+    <path value="default\body004.obj"/>
+    <diffuse value="default\diffuse.png"/>
+    <normal value="default\normal.png"/>
+    <thumbnail value="default\default_thumb_pic004.png"/>
+    <pointList>
+      <point x="0" y="0" z="0" jointAssembly="assembly" useAxis="x,y,z,-x,-y,-z"/>
+    </pointList>
+    <mass value="2.12"/>
+    <com x="0" y="0" z="0.03"/>
+    <inertia lxx="0" lyy="0" lzz="0.01" lxy="0" lyz="0" lxz="0"/>
+  </block>
+</data>
